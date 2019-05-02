@@ -16,7 +16,8 @@
     border-radius: 14px;
     height: 600px;
     background: url('img/product-detail/img-1.png') center no-repeat;
-    background-size: 100%;
+    background-size:cover;
+    // background-size: 100%;
     @media #{$breakpoint-xs} {
         height: 205px;
         background-size: 111%;
@@ -71,6 +72,7 @@
         background: $bg-default url("img/home/logo.png") no-repeat;
         background-size: 60%;
         background-position: 50% 60%;
+        // background-size:cover;
         
         
     }
@@ -89,18 +91,21 @@
             border: 3px solid #e3e3e3;
             height: 170px;
             background: $white-color url('img/product-detail/img-3.png') center no-repeat;
+            background-size:cover;
         }
         &-2{
             border-radius: 15px;
             border: 3px solid #e3e3e3;
             height: 170px;
             background: $white-color url('img/product-detail/img-4.png') center no-repeat;
+            background-size:cover;
         }
         &-3{
             border-radius: 15px;
             border: 3px solid #e3e3e3;
             height: 170px;
             background: $white-color url('img/product-detail/img-5.png') center no-repeat;
+            background-size:cover;
         }
       
     }

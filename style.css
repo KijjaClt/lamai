@@ -246,7 +246,8 @@
   .product-area .product-head-img {
     height: 600px;
     border-radius: 0 0 14px 14px;
-    background: url("img/process/img-2.png"); }
+    background: url("img/process/img-2.png");
+    background-size: cover; }
   .product-area .button-detail-content {
     width: 100%;
     background: transparent;
@@ -301,7 +302,7 @@
   border-radius: 14px;
   height: 600px;
   background: url("img/product-detail/img-1.png") center no-repeat;
-  background-size: 100%; }
+  background-size: cover; }
   @media only screen and (max-width: 767px) {
     .product-detail-area {
       height: 205px;
@@ -352,17 +353,20 @@
     border-radius: 15px;
     border: 3px solid #e3e3e3;
     height: 170px;
-    background: #ffffff url("img/product-detail/img-3.png") center no-repeat; }
+    background: #ffffff url("img/product-detail/img-3.png") center no-repeat;
+    background-size: cover; }
   .product-detail-area-content .img-blog-2 {
     border-radius: 15px;
     border: 3px solid #e3e3e3;
     height: 170px;
-    background: #ffffff url("img/product-detail/img-4.png") center no-repeat; }
+    background: #ffffff url("img/product-detail/img-4.png") center no-repeat;
+    background-size: cover; }
   .product-detail-area-content .img-blog-3 {
     border-radius: 15px;
     border: 3px solid #e3e3e3;
     height: 170px;
-    background: #ffffff url("img/product-detail/img-5.png") center no-repeat; }
+    background: #ffffff url("img/product-detail/img-5.png") center no-repeat;
+    background-size: cover; }
   .product-detail-area-content .detail-title-blog h4, .product-detail-area-content .detail-title-blog p {
     color: #ffffff; }
   .product-detail-area-content .detail-btn-blog {
@@ -1108,7 +1112,8 @@ textarea:focus {
   z-index: 100;
   width: 100%;
   height: 650px;
-  background: url("img/home/header-homepage.png") no-repeat; }
+  background: url("img/home/header-homepage.png") no-repeat;
+  background-size: cover; }
   .header-area .top-header-area {
     width: 100%;
     height: 50px;
@@ -1271,7 +1276,8 @@ textarea:focus {
 .top-catagory-area {
   padding: 30px 0 0; }
   .top-catagory-area.have-logo-bg {
-    background: #FFF7EC url("img/home/logo.png") center no-repeat; }
+    background: #FFF7EC url("img/home/logo.png") center no-repeat;
+    background-size: cover; }
   .top-catagory-area .detail-blog {
     padding: 30px 0; }
     @media only screen and (max-width: 767px) {
