@@ -1,0 +1,132 @@
+@import 'theme_color';
+@import 'fonts';
+@import 'mixin';
+@import 'responsive';
+
+.craft-area{
+    background: $bg-default;
+    padding-top: 20px ;
+    // height: 650px;
+    /* margin-top: 130px; */
+    position: absolute;
+    top: 40%;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 14px ;
+    @media #{$breakpoint-xs} {
+        position: relative;
+        transform: translate(0);
+        top: 0;
+         z-index: 0;
+         left: 0%;
+        
+     }
+    h1{
+        font-size: 100px;
+        font-weight: normal;
+        margin-bottom: 30px;
+        @media #{$breakpoint-xs} {
+           font-size: 44px;
+            
+         }
+    }
+    h3{
+        font-size: 36px; 
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .craft-head-text {
+        padding: 25px 0 0 100px;
+        @media #{$breakpoint-xs} {
+            padding: 0;
+             
+          }
+    }
+    .craft-head-img{
+        height: 600px;
+        border-radius: 0 0 14px 14px;
+        background: url('img/process/img-2.png');
+        @media #{$breakpoint-xs} {
+            height: 170px;
+            border-radius: 0;
+            background: url(img/process/img-2.png) no-repeat;
+            background-size: contain;
+             
+          }
+    }
+}
+.craft-area-content{
+    position: relative;
+    .have-black-bg{
+        background: #252525;
+    }
+    &.mb-have-black-bg{
+        @media #{$breakpoint-xs} {
+            background: #252525;
+        }
+        
+    }
+    .content-arae{
+        position: absolute;
+        width: 100%;
+        top: 25%;
+        @media #{$breakpoint-xs} {
+            position: relative;
+            top: 0;
+             
+          }
+        // background: #000;
+        h3{
+            color: $white-color;
+            margin-bottom: 30px;
+        }
+        .detail-content{
+            .img-detail-content{
+                img{
+                    min-height: 455px;
+                }
+            }
+            .button-detail-content{
+                width: 100%;
+                background: transparent;
+                border: 2px solid #252525;
+                margin-top: 30px;
+                text-align: center;
+                @media #{$breakpoint-xs} {
+                    border: 2px solid $white-color;
+                     
+                  }
+                a{
+                    font-weight: bold;
+                    @media #{$breakpoint-xs} {
+                        color: $white-color;
+                        cursor: pointer;
+                        width: 100%;
+
+                         
+                      }
+                    
+                
+                }
+            }
+        }
+        .text-content{
+            float: right;
+            @media #{$breakpoint-xs} {
+                float: left;
+                 
+              }
+            p{
+                color: $white-color;
+            }
+        }
+        
+    }
+}

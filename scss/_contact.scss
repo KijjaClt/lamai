@@ -1,0 +1,108 @@
+@import 'theme_color';
+@import 'fonts';
+@import 'mixin';
+@import 'responsive';
+
+.contact-area{
+    background: $bg-default;
+    padding-top: 20px ;
+    // height: 650px;
+    /* margin-top: 130px; */
+    position: absolute;
+    top: 40%;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 14px ;
+    @media #{$breakpoint-xs} {
+        position: relative;
+        transform: translate(0);
+        top: 0;
+         z-index: 0;
+         left: 0%;
+     }
+    h1{
+        font-size: 100px;
+        font-weight: normal;
+        line-height: 0.8;
+        @media #{$breakpoint-xs} {
+            font-size: 60px;
+          }
+    }
+    h3{
+        font-size: 36px; 
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    p{
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    .contact-head-text {
+
+        padding: 25px 0 0 100px;
+        @media #{$breakpoint-xs} {
+            padding: 0;
+        }
+    }
+    .content-center{
+        margin: 0 auto;
+    }
+    .img-blog{
+        &-1{
+            background: url('img/contact/contact1.png') center no-repeat;
+            background-size: 100%;
+        }
+        &-2{
+            background: url('img/contact/contact2.png') center no-repeat;
+            background-size: 100%;
+        }
+        &-3{
+            background: url('img/contact/contact3.png') center no-repeat;
+            background-size: 100%;
+        }
+    }
+}
+.contact-area-content{
+    position: relative;
+    .have-black-bg{
+        background: #252525;
+    }
+    .content-arae{
+        position: absolute;
+        width: 100%;
+        top: 25%;
+        // background: #000;
+        h3{
+            color: $white-color;
+            margin-bottom: 30px;
+        }
+        .detail-content{
+            .img-detail-content{
+                img{
+                    min-height: 455px;
+                }
+            }
+            .button-detail-content{
+                width: 100%;
+                background: transparent;
+                border: 2px solid #252525;
+                margin-top: 30px;
+                text-align: center;
+                a{
+                    font-weight: bold;
+                }
+            }
+        }
+        .text-content{
+            float: right;
+            p{
+                color: $white-color;
+            }
+        }
+        
+    }
+}

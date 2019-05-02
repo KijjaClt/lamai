@@ -1,0 +1,65 @@
+@import 'theme_color';
+@import 'fonts';
+@import 'mixin';
+@import 'responsive';
+
+.out-story-area{
+    background: $bg-default;
+    padding-top: 20px ;
+    // height: 650px;
+    /* margin-top: 130px; */
+    position: absolute;
+    top: 40%;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 14px 14px 0 0;
+    @media #{$breakpoint-xs} {
+       position: relative;
+       transform: translate(0);
+       top: 0;
+        z-index: 0;
+        left: 0%;
+    }
+    h1{
+        font-size: 100px;
+        font-weight: normal;
+        margin-bottom: 60px;
+        @media #{$breakpoint-xs} {
+            font-size: 60px;
+        }
+    }
+    h3{
+        font-size: 36px; 
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .out-story-head-text {
+        padding: 25px 0 0 100px;
+        @media #{$breakpoint-xs} {
+            padding: 0;
+        }
+    }
+    .process-head-img{
+        height: 600px;
+        background: url('img/process/img-1.png')
+    }
+
+}
+.out-story-img-bg{
+    height: 600px;
+    background: url('img/out-story/img-2.png');
+    margin-top: 228px;
+    @media #{$breakpoint-xs} {
+        height: 160px;
+        margin-top: 0;
+        background: url('img/out-story/img-2.png') no-repeat;
+        background-size: contain
+     }
+}

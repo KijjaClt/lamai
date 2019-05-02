@@ -1,0 +1,77 @@
+@import 'theme_color';
+@import 'fonts';
+@import 'mixin';
+@import 'responsive';
+
+.process-area{
+    background: $bg-default;
+    padding-top: 20px ;
+    // height: 650px;
+    /* margin-top: 130px; */
+    position: absolute;
+    top: 40%;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 14px ;
+    @media #{$breakpoint-xs} {
+        position: relative;
+        transform: translate(0);
+        top: 0;
+         z-index: 0;
+         left: 0%;
+     }
+
+    h1{
+        font-size: 100px;
+        font-weight: normal;
+        margin-bottom: 30px;
+        @media #{$breakpoint-xs} {
+            font-size: 60px;
+        }
+    }
+        
+    h3{
+        font-size: 36px; 
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .process-head-text {
+        padding: 25px 0 0 100px;
+        @media #{$breakpoint-xs} {
+            padding: 0;
+        }
+    }
+    .process-head-img{
+        height: 600px;
+        border-radius: 0 0 14px 14px;
+        background: url('img/process/img-1.png');
+        @media #{$breakpoint-xs} {
+            height: 165px;
+            border-radius: 0;
+            background: url(img/process/img-1.png) no-repeat contain;
+           
+        }
+    }
+
+}
+.process-area-content{
+    
+    &.have-logo-bg-left{
+        background: $bg-default url("img/home/logo.png") -15% 0 no-repeat;
+        background-size: 50%;
+        
+    }
+    &.have-logo-bg-right{
+        background: url("img/home/logo.png") 120% 10% no-repeat;
+        background-size: 60%;
+        
+    }
+}
+

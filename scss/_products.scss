@@ -1,0 +1,109 @@
+@import 'theme_color';
+@import 'fonts';
+@import 'mixin';
+@import 'responsive';
+
+.product-area{
+       background: $bg-default;
+    /* padding-top: 20px; */
+    /* margin-top: 130px; */
+    position: absolute;
+    top: 40%;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 14px;
+    padding: 20px 50px 75px;
+    box-shadow: 0 0 35px 5px rgba(0, 0, 0, 0.05);
+    @media #{$breakpoint-xs} {
+        position: relative;
+        transform: translate(0);
+        top: 0;
+         z-index: 0;
+         left: 0%;
+         padding: 20px 15px;
+     }
+    h1{
+        font-size: 100px;
+        font-weight: normal;
+        margin-bottom: 30px;
+        @media #{$breakpoint-xs} {
+            font-size: 60px;
+        }
+    }
+    h3{
+        font-size: 36px; 
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .product-head-text {
+        padding: 25px 0 0 0;
+    }
+    .product-head-img{
+        height: 600px;
+        border-radius: 0 0 14px 14px;
+        background: url('img/process/img-2.png')
+    }
+    .button-detail-content{
+        width: 100%;
+        background: transparent;
+        border: 2px solid #252525;
+        margin-top: 30px;
+        text-align: center;
+        a{
+            font-weight: bold;
+        }
+    }
+    .list-product{
+
+        .product-bg{
+            width: 100%;
+            height: 237.5px;
+            background: url('img/product/img-4.png') no-repeat;
+            background-size: 100%;
+            background-position: 0% 100%; 
+            border-radius: 14px;
+        }
+        .mb-product-bg1{
+            width: 100%;
+            height: 237.5px;
+            background: url('img/product/img-1.png') no-repeat;
+            background-size: 100%;
+            background-position: 0% 79%; 
+            border-radius: 14px;
+        }
+        .mb-product-bg2{
+            width: 100%;
+            height: 237.5px;
+            background: url('img/product/img-2.png') no-repeat;
+            background-size: 100%;
+            background-position: 0% 79%; 
+            border-radius: 14px;
+        }
+        .mb-product-bg3{
+            width: 100%;
+            height: 237.5px;
+            background: url('img/product/img-3.png') no-repeat;
+            background-size: 100%;
+            background-position: 0% 79%; 
+            border-radius: 14px;
+        }
+        
+        .product-discreption{
+            margin: 20px 0 50px 0;
+            h4{
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+        
+    }
+}
