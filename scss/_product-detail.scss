@@ -15,8 +15,23 @@
     transform: translate(-50%);
     border-radius: 14px;
     height: 600px;
-    background: url('img/product-detail/img-1.png') center no-repeat;
+   
     background-size:cover;
+    &.chathai{
+        background: url('img/product-detail/img-1.png') center no-repeat;
+    }
+    &.malai{
+        background: url('img/product-detail/banner-malai.jpg') 50% 87% no-repeat;
+        background-size: 100%;
+    }
+    &.malai-big{
+        background: url('img/product-detail/banner-malai-big.jpg') 50% 40% no-repeat;
+        background-size: 100%;
+    }
+    &.coconut{
+        background: url('img/product-detail/banner-coconut.jpg') center no-repeat;
+        background-size: 100%;
+    }
     // background-size: 100%;
     @media #{$breakpoint-xs} {
         height: 205px;

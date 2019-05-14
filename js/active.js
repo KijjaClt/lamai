@@ -135,12 +135,13 @@
     $('a[href="#"]').click(function ($) {
         $.preventDefault()
     });
-    $('.read-more').click(function(){
-        $( ".more-detail" ).slideToggle( "slow", function() {});
-        var me = $(this).toggleClass("open"),
-        txt = me.is('.open') ? 'Hide ..' : 'Read More ..';
-        $(me.attr("href")).toggleClass("active");
-        me.text(txt);
-    })
+
+    // $('.read-more').click(function(){
+    //     $( ".more-detail" ).slideToggle( "slow", function() {});
+    //     var me = $(this).toggleClass("open"),
+    //     txt = me.is('.open') ? 'Hide ..' : 'Read More ..';
+    //     $(me.attr("href")).toggleClass("active");
+    //     me.text(txt);
+    // })
 
 })(jQuery);
