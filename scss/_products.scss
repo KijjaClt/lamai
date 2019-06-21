@@ -27,6 +27,7 @@
         font-size: 100px;
         font-weight: normal;
         margin-bottom: 30px;
+        font-style: italic;
         @media #{$breakpoint-xs} {
             font-size: 60px;
         }
@@ -35,6 +36,7 @@
         font-size: 36px; 
         font-weight: normal;
         margin-bottom: 30px;
+        font-style: italic;
     }
     h4{
         font-size: 24px;
@@ -99,6 +101,7 @@
         .product-discreption{
             margin: 20px 0 50px 0;
             h4{
+                font-style: italic;
                 margin-bottom: 20px;
             }
             p{

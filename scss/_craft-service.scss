@@ -26,6 +26,7 @@
         font-size: 100px;
         font-weight: normal;
         margin-bottom: 30px;
+        font-style: italic;
         @media #{$breakpoint-xs} {
            font-size: 44px;
             
@@ -34,6 +35,7 @@
     h3{
         font-size: 36px; 
         font-weight: normal;
+        font-style: italic;
         margin-bottom: 30px;
     }
     h4{
@@ -64,69 +66,41 @@
 }
 .craft-area-content{
     position: relative;
-    .have-black-bg{
+    padding: 50px 0;
+    &.have-black-bg{
         background: #252525;
     }
     &.mb-have-black-bg{
-        @media #{$breakpoint-xs} {
-            background: #252525;
-        }
+        background: #252525;
         
     }
-    .content-arae{
-        position: absolute;
-        width: 100%;
-        top: 25%;
-        @media #{$breakpoint-xs} {
-            position: relative;
-            top: 0;
-             
-          }
-        // background: #000;
+    .detail-content{
         h3{
+            font-style: italic;
+            font-weight: normal;
             color: $white-color;
-            margin-bottom: 30px;
         }
-        .detail-content{
-            .img-detail-content{
-                img{
-                    min-height: 455px;
-                }
+      .description{
+          margin-top: 20px;
+        
+        p{
+            color: $white-color;
+            span{
+                font-style: italic;
+                font-weight: normal;
             }
-            .button-detail-content{
-                width: 100%;
-                background: transparent;
-                border: 2px solid #252525;
-                margin-top: 30px;
-                text-align: center;
-                @media #{$breakpoint-xs} {
-                    border: 2px solid $white-color;
-                     
-                  }
-                a{
-                    font-weight: bold;
-                    @media #{$breakpoint-xs} {
-                        color: $white-color;
-                        cursor: pointer;
-                        width: 100%;
+        }
+        .img-detail-content{
+            img{
+              max-height:466px;
+            }
+             
+        }
+      }
+      
 
-                         
-                      }
-                    
-                
-                }
-            }
-        }
-        .text-content{
-            float: right;
-            @media #{$breakpoint-xs} {
-                float: left;
-                 
-              }
-            p{
-                color: $white-color;
-            }
-        }
         
     }
+
+
 }

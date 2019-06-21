@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i");
 @import url(css/bootstrap.min.css);
 @import url(css/owl.carousel.min.css);
 @import url(css/animate.css);
@@ -27,14 +28,16 @@
   .out-story-area h1 {
     font-size: 100px;
     font-weight: normal;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    font-style: italic; }
     @media only screen and (max-width: 767px) {
       .out-story-area h1 {
         font-size: 60px; } }
   .out-story-area h3 {
     font-size: 36px;
     font-weight: normal;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-style: italic; }
   .out-story-area h4 {
     font-size: 24px; }
   .out-story-area p {
@@ -80,14 +83,16 @@
   .process-area h1 {
     font-size: 100px;
     font-weight: normal;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-style: italic; }
     @media only screen and (max-width: 767px) {
       .process-area h1 {
         font-size: 60px; } }
   .process-area h3 {
     font-size: 36px;
     font-weight: normal;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-style: italic; }
   .process-area h4 {
     font-size: 24px; }
   .process-area p {
@@ -135,13 +140,15 @@
   .craft-area h1 {
     font-size: 100px;
     font-weight: normal;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-style: italic; }
     @media only screen and (max-width: 767px) {
       .craft-area h1 {
         font-size: 44px; } }
   .craft-area h3 {
     font-size: 36px;
     font-weight: normal;
+    font-style: italic;
     margin-bottom: 30px; }
   .craft-area h4 {
     font-size: 24px; }
@@ -164,48 +171,25 @@
         background-size: contain; } }
 
 .craft-area-content {
-  position: relative; }
-  .craft-area-content .have-black-bg {
+  position: relative;
+  padding: 50px 0; }
+  .craft-area-content.have-black-bg {
     background: #252525; }
-  @media only screen and (max-width: 767px) {
-    .craft-area-content.mb-have-black-bg {
-      background: #252525; } }
-  .craft-area-content .content-arae {
-    position: absolute;
-    width: 100%;
-    top: 25%; }
-    @media only screen and (max-width: 767px) {
-      .craft-area-content .content-arae {
-        position: relative;
-        top: 0; } }
-    .craft-area-content .content-arae h3 {
-      color: #ffffff;
-      margin-bottom: 30px; }
-    .craft-area-content .content-arae .detail-content .img-detail-content img {
-      min-height: 455px; }
-    .craft-area-content .content-arae .detail-content .button-detail-content {
-      width: 100%;
-      background: transparent;
-      border: 2px solid #252525;
-      margin-top: 30px;
-      text-align: center; }
-      @media only screen and (max-width: 767px) {
-        .craft-area-content .content-arae .detail-content .button-detail-content {
-          border: 2px solid #ffffff; } }
-      .craft-area-content .content-arae .detail-content .button-detail-content a {
-        font-weight: bold; }
-        @media only screen and (max-width: 767px) {
-          .craft-area-content .content-arae .detail-content .button-detail-content a {
-            color: #ffffff;
-            cursor: pointer;
-            width: 100%; } }
-    .craft-area-content .content-arae .text-content {
-      float: right; }
-      @media only screen and (max-width: 767px) {
-        .craft-area-content .content-arae .text-content {
-          float: left; } }
-      .craft-area-content .content-arae .text-content p {
-        color: #ffffff; }
+  .craft-area-content.mb-have-black-bg {
+    background: #252525; }
+  .craft-area-content .detail-content h3 {
+    font-style: italic;
+    font-weight: normal;
+    color: #ffffff; }
+  .craft-area-content .detail-content .description {
+    margin-top: 20px; }
+    .craft-area-content .detail-content .description p {
+      color: #ffffff; }
+      .craft-area-content .detail-content .description p span {
+        font-style: italic;
+        font-weight: normal; }
+    .craft-area-content .detail-content .description .img-detail-content img {
+      max-height: 466px; }
 
 .product-area {
   background: #FFF7EC;
@@ -230,14 +214,16 @@
   .product-area h1 {
     font-size: 100px;
     font-weight: normal;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-style: italic; }
     @media only screen and (max-width: 767px) {
       .product-area h1 {
         font-size: 60px; } }
   .product-area h3 {
     font-size: 36px;
     font-weight: normal;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-style: italic; }
   .product-area h4 {
     font-size: 24px; }
   .product-area p {
@@ -288,6 +274,7 @@
   .product-area .list-product .product-discreption {
     margin: 20px 0 50px 0; }
     .product-area .list-product .product-discreption h4 {
+      font-style: italic;
       margin-bottom: 20px; }
     .product-area .list-product .product-discreption p {
       font-size: 18px; }
@@ -346,6 +333,7 @@
     left: 50%;
     transform: translate(-50%, -50%); }
     .product-detail-area .product-detail-title h1 {
+      font-style: italic;
       color: #ffffff; }
 
 .product-detail-area-content {
@@ -360,23 +348,61 @@
     @media only screen and (max-width: 767px) {
       .product-detail-area-content.have-img-bg {
         background-size: auto; } }
-  .product-detail-area-content .img-blog-1 {
+  .product-detail-area-content .coco-main-img {
+    width: 40%; }
+  .product-detail-area-content .coco-1 {
     border-radius: 15px;
     border: 3px solid #e3e3e3;
     height: 170px;
-    background: #ffffff url("img/product-detail/img-3.png") center no-repeat;
+    background: #ffffff url(img/product-detail/coconut/coco-3.png) 50% 70% no-repeat;
+    background-size: 90%; }
+  .product-detail-area-content .coco-2 {
+    border-radius: 15px;
+    border: 3px solid #e3e3e3;
+    height: 170px;
+    background: #ffffff url("img/product-detail/coconut/coco-4.png") center no-repeat;
     background-size: cover; }
-  .product-detail-area-content .img-blog-2 {
+  .product-detail-area-content .coco-3 {
     border-radius: 15px;
     border: 3px solid #e3e3e3;
     height: 170px;
-    background: #ffffff url("img/product-detail/img-4.png") center no-repeat;
+    background: #ffffff url("img/product-detail/coconut/coco-5.png") center no-repeat;
     background-size: cover; }
-  .product-detail-area-content .img-blog-3 {
+  .product-detail-area-content .cha-thai-1 {
     border-radius: 15px;
     border: 3px solid #e3e3e3;
     height: 170px;
-    background: #ffffff url("img/product-detail/img-5.png") center no-repeat;
+    background: #ffffff url(img/product-detail/img-3.png) 50% 70% no-repeat;
+    background-size: 90%; }
+  .product-detail-area-content .cha-thai-2 {
+    border-radius: 15px;
+    border: 3px solid #e3e3e3;
+    height: 170px;
+    background: #ffffff url(img/product-detail/img-4.png) 50% 65% no-repeat;
+    background-size: cover; }
+  .product-detail-area-content .cha-thai-3 {
+    border-radius: 15px;
+    border: 3px solid #e3e3e3;
+    height: 170px;
+    background: #ffffff url(img/product-detail/img-5.png) 50% 58% no-repeat;
+    background-size: cover; }
+  .product-detail-area-content .lamai-1 {
+    border-radius: 15px;
+    border: 3px solid #e3e3e3;
+    height: 170px;
+    background: #ffffff url(img/product-detail/big-malai/lamai-3.png) 50% 37% no-repeat;
+    background-size: 90%; }
+  .product-detail-area-content .lamai-2 {
+    border-radius: 15px;
+    border: 3px solid #e3e3e3;
+    height: 170px;
+    background: #ffffff url(img/product-detail/big-malai/lamai-5.png) 50% 80% no-repeat;
+    background-size: cover; }
+  .product-detail-area-content .lamai-3 {
+    border-radius: 15px;
+    border: 3px solid #e3e3e3;
+    height: 170px;
+    background: #ffffff url(img/product-detail/big-malai/lamai-4.png) 50% 75% no-repeat;
     background-size: cover; }
   .product-detail-area-content .detail-title-blog h4, .product-detail-area-content .detail-title-blog p {
     color: #ffffff; }
@@ -417,14 +443,16 @@
   .contact-area h1 {
     font-size: 100px;
     font-weight: normal;
-    line-height: 0.8; }
+    line-height: 0.8;
+    font-style: italic; }
     @media only screen and (max-width: 767px) {
       .contact-area h1 {
         font-size: 60px; } }
   .contact-area h3 {
     font-size: 36px;
     font-weight: normal;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-style: italic; }
   .contact-area h4 {
     font-size: 24px; }
   .contact-area p {
@@ -717,11 +745,6 @@
 
 */
 /* :: 1.0 Import Fonts */
-@font-face {
-  font-family: 'CrimsonText';
-  src: url("../lamai/fonts/(CrimsonText-Regular)CrimsonText-Regular.ttf") format("truetype");
-  /* Safari, Android, iOS */ }
-
 /* :: 2.0 Import All CSS */
 /* :: 3.0 Base CSS */
 * {
@@ -729,7 +752,7 @@
   padding: 0; }
 
 body {
-  font-family: "CrimsonText";
+  font-family: "Crimson Text", serif;
   font-size: 18px;
   background: #FFF7EC; }
   body.have-bg {
@@ -882,6 +905,10 @@ img {
 
 .padt-500 {
   padding-top: 500px !important; }
+
+@media only screen and (min-width: 1600px) {
+  .lg-padt-600 {
+    padding-top: 600px !important; } }
 
 .padb-40 {
   padding-bottom: 40px !important; }
@@ -1325,7 +1352,8 @@ textarea:focus {
               color: #ffffff;
               font-size: 18px;
               display: block;
-              padding: 10px 20px; }
+              padding: 10px 20px;
+              font-style: italic; }
         @media only screen and (max-width: 767px) {
           .header-area .delicious-main-menu .classy-nav-container .inner_menu {
             display: none; } }
@@ -1410,7 +1438,7 @@ textarea:focus {
       color: #ffffff;
       line-height: 1.5;
       margin-bottom: 0;
-      font-weight: bold; }
+      font-style: italic; }
     .header-area .text-on-header .icon-in-text {
       margin: 30px 0; }
 
@@ -1423,7 +1451,7 @@ textarea:focus {
   padding: 30px 0 0; }
   .top-catagory-area.have-logo-bg {
     background: #FFF7EC url("img/home/logo.png") center no-repeat;
-    background-size: cover; }
+    background-size: contain; }
   .top-catagory-area .detail-blog {
     padding: 30px 0; }
     @media only screen and (max-width: 767px) {
@@ -1432,10 +1460,12 @@ textarea:focus {
     .top-catagory-area .detail-blog .single-top-catagory .right {
       text-align: right; }
     .top-catagory-area .detail-blog .single-top-catagory h1 {
-      font-size: 72px; }
+      font-size: 60px;
+      font-weight: normal;
+      font-style: italic; }
       @media only screen and (max-width: 767px) {
         .top-catagory-area .detail-blog .single-top-catagory h1 {
-          font-size: 60px; } }
+          font-size: 50px; } }
     .top-catagory-area .detail-blog .single-top-catagory h3 {
       font-size: 36px; }
     .top-catagory-area .detail-blog .single-top-catagory h4 {
@@ -1470,7 +1500,8 @@ textarea:focus {
         display: none; }
       .top-catagory-area .detail-blog .single-top-catagory .top-detail .read-more {
         font-size: 24px;
-        font-weight: bold;
+        font-weight: normal;
+        font-style: italic;
         color: #4A4A4A;
         text-decoration: underline;
         padding: 5px 0;
@@ -1924,12 +1955,14 @@ textarea:focus {
       .footer-area .foot-menu .list-foot-menu li {
         margin: 0 30px; }
         .footer-area .foot-menu .list-foot-menu li a {
+          font-style: italic;
           font-size: 20px; }
   .footer-area .footer-copyright-area {
     height: 50px;
     background: #4A4A4A;
     padding: 10px 0; }
     .footer-area .footer-copyright-area p {
+      font-style: italic;
       font-size: 18px;
       color: #ffffff; }
 

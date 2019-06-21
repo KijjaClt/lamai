@@ -25,6 +25,7 @@
         font-size: 100px;
         font-weight: normal;
         margin-bottom: 60px;
+        font-style: italic;
         @media #{$breakpoint-xs} {
             font-size: 60px;
         }
@@ -33,6 +34,7 @@
         font-size: 36px; 
         font-weight: normal;
         margin-bottom: 30px;
+        font-style: italic;
     }
     h4{
         font-size: 24px;
